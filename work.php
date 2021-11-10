@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Work | Portfolio Website Template | CODEGRID</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- bootstrap cdns -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="wow.min.js"></script>
-
-</head>
-
+<title>Trampos</title>
+<!--------------- HEAD References TEMPLATES --------------->
+<?php include('templates/head.html'); ?>
+<!--------------- HEAD References TEMPLATES --------------->
 <body>
     <div class="wrapper">
 
-        <!--------------- navbar starts here --------------->
-        <?php include('templates/header.html');?>
-        <!--------------- navbar ends here --------------->
+        <!--------------- NAVBAR/HEADER template --------------->
+        <?php include('templates/header.html'); ?>
+        <!--------------- NAVBAR/HEADER template --------------->
 
         <div class="whitespace"></div>
 
-        <!--------------- hero section starts here --------------->
+        <!--------------- HERO TRAMPOS --------------->
         <div class="container">
             <div class="hero-content">
                 <br><br>
@@ -50,9 +28,9 @@
             </div>
         </div>
 
-        <!--------------- hero section ends here --------------->
+        <!--------------- HERO TRAMPOS --------------->
 
-        <!--------------- projects section starts here --------------->
+        <!--------------- Seção de projetos começa aqui --------------->
         <div class="container-fluid">
 
             <div class="whitespace"></div>
@@ -61,13 +39,13 @@
             <div class="row">
                 <div class="col-lg-8"></div>
 
-                <div class="col-lg-4 project project1 wow fadeInUp" data-wow-delay="1.4s" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project1 wow fadeInUp" data-wow-delay="1.4s" onclick="location.href='project.php'"></div>
             </div>
 
             <div class="whitespace"></div>
 
             <div class="row">
-                <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div>
+                <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.php'"></div>
 
                 <div class="col-lg-6"></div>
             </div>
@@ -77,7 +55,7 @@
             <div class="row">
                 <div class="col-lg-7"></div>
 
-                <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.html'"></div>
+                <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.php'"></div>
 
                 <div class="col-lg-1"></div>
             </div>
@@ -87,7 +65,7 @@
             <div class="row">
                 <div class="col-lg-1"></div>
 
-                <div class="col-lg-5 project project4 wow fadeInUp" onclick="location.href='project.html'"></div>
+                <div class="col-lg-5 project project4 wow fadeInUp" onclick="location.href='project.php'"></div>
 
                 <div class="col-lg-6"></div>
             </div>
@@ -95,22 +73,22 @@
             <div class="whitespace"></div>
         </div>
 
-        <!--------------- projects section ends here --------------->
+        <!--------------- Seção de projetos termina aqui --------------->
 
-        <!--------------- footer starts here --------------->
-        <?php include('templates/footer.html')?>
-        <!--------------- footer ends here --------------->
+        <!--------------- FOOTER template --------------->
+        <?php include('templates/footer.html') ?>
+        <!--------------- FOOTER template --------------->
 
         <br><br><br><br>
 
     </div>
 
-    <!-- greensock cdn -->
+    <!-- REF - greensock cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        // navigation starts here
+        // navigation aqui
         $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -126,9 +104,9 @@
             $("#resize").toggleClass("active");
         });
 
-        // navigation ends here
+        // navigation fim
 
-        // nav animation
+        // nav animation inicio
 
         TweenMax.from("#brand", 1, {
             delay: 0.4,
@@ -143,7 +121,7 @@
             ease: Expo.easeInOut
         }, 0.1);
 
-        // nav animation ends
+        // nav animation fim
 
         new WOW().init();
     </script>

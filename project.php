@@ -1,43 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Project | Portfolio Website Template | CODEGRID</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- bootstrap cdns -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- ionicons cdn -->
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-
-
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="wow.min.js"></script>
-
-</head>
-
+<title>Projetos</title>
+<!--------------- HEAD References TEMPLATES --------------->
+<?php include('templates/head.html'); ?>
+<!--------------- HEAD References TEMPLATES --------------->
 <body>
     <div class="wrapper">
 
-        <!--------------- navbar starts here --------------->
+        <!--------------- NAVBAR/HEADER TEMPLATES --------------->
         <?php include('templates/header.html'); ?>
-        <!--------------- navbar ends here --------------->
+        <!--------------- NAVBAR/HEADER TEMPLATES --------------->
 
         <div class="whitespace"></div>
 
-        <!--------------- hero section starts here --------------->
+        <!--------------- Seção HERO Projetos --------------->
         <div class="container">
             <div class="hero-content">
                 <br><br>
@@ -70,10 +44,10 @@
                 </div>
             </div>
         </div>
-        <!--------------- hero section ends here --------------->
+        <!--------------- Seção Hero termina aqui--------------->
 
 
-        <!--------------- project image section starts here --------------->
+        <!--------------- Imagens da seção de projeto --------------->
 
         <div class="project-img">
             <div class="container">
@@ -89,18 +63,19 @@
             </div>
         </div>
 
-        <!--------------- project image section ends here --------------->
+        <!--------------- Imagens da seção de projeto --------------->
 
         <br><br>
 
-        <!--------------- project nav starts here --------------->
+        <!--------------- Navegar entre projetos --------------->
 
         <div class="project-nav">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 prev">
                         <p>
-                            <ion-icon name="arrow-back"></ion-icon>previous</p>
+                            <ion-icon name="arrow-back"></ion-icon>previous
+                        </p>
                     </div>
                     <div class="col-lg-6 next">
                         <p>next
@@ -111,25 +86,25 @@
             </div>
         </div>
 
-        <!--------------- project nav starts here --------------->
+        <!--------------- Navegar entre projetos --------------->
 
         <div class="whitespace"></div>
 
 
-        <!--------------- footer starts here --------------->
-        <?php include('templates/footer.html')?>
-        <!--------------- footer ends here --------------->
+        <!--------------- FOOTER template --------------->
+        <?php include('templates/footer.html') ?>
+        <!--------------- FOOTER template --------------->
 
         <br><br><br><br>
 
     </div>
 
-    <!-- greensock cdn -->
+    <!-- REF - greensock cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        // navigation starts here
+        // navigation aqui
         $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -145,9 +120,9 @@
             $("#resize").toggleClass("active");
         });
 
-        // navigation ends here
+        // navigation fim
 
-        // nav animation
+        // nav animation inicio
 
         TweenMax.from("#brand", 1, {
             delay: 0.4,
@@ -162,7 +137,7 @@
             ease: Expo.easeInOut
         }, 0.1);
 
-        // nav animation ends
+        // nav animation fim
 
 
 

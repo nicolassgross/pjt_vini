@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Portfólio WEB</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- bootstrap cdns -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- terminal effect -->
-    <script src="t.min.js"></script>
-
-    <!-- animações -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="wow.min.js"></script>
-
-</head>
+<title>NICOLAS</title>
+<?php include('templates/head.html'); ?>
 
 <body>
     <div class="wrapper">
@@ -34,19 +8,17 @@
         <?php include('templates/header.html'); ?>
         <!--------------- NAVBAR/HEADER template --------------->
 
-        <!--------------- Texto central INDEX --------------->
+        <!--------------- HERO INDEX --------------->
         <div class="hero">
             <div class="header">
-                <h1 class="line anim-typewriter">VINICIUS MONDINI</h1>
+                <h1 class="line anim-typewriter">Nicolas</h1>
             </div>
         </div>
 
         <div class="scroll-down"></div>
-        <!--------------- hero section ends here --------------->
+        <!--------------- HERO INDEX --------------->
 
-
-
-        <!--------------- projects section starts here --------------->
+        <!--------------- Seção de projetos começa aqui --------------->
         <div class="container-fluid">
             <br><br><br>
 
@@ -93,7 +65,7 @@
 
             <div class="whitespace"></div>
         </div>
-        <!--------------- projects section ends here --------------->
+        <!--------------- Seção de projetos termina aqui --------------->
 
         <!--------------- FOOTER template --------------->
         <?php include('templates/footer.html') ?>
@@ -103,12 +75,12 @@
 
     </div>
 
-    <!-- greensock cdn -->
+    <!-- REF - greensock cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        // navigation starts here
+        // navigation aqui
 
         $("#toggle").click(function() {
             $(this).toggleClass('on');
@@ -125,9 +97,9 @@
             $("#resize").toggleClass("active");
         });
 
-        // navigation ends here
+        // navigation fim
 
-        // nav animation
+        // nav animation inicio
 
         TweenMax.from("#brand", 1, {
             delay: 0.4,
@@ -142,7 +114,7 @@
             ease: Expo.easeInOut
         }, 0.1);
 
-        // nav animation ends
+        // nav animation fim
 
         new WOW().init();
     </script>

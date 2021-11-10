@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Contato Portfolio WEB</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- bootstrap cdns -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="wow.min.js"></script>
-
-</head>
-
+<title>Contato</title>
+<!--------------- HEAD References TEMPLATES --------------->
+<?php include('templates/head.html'); ?>
+<!--------------- HEAD References TEMPLATES --------------->
 <body>
     <div class="wrapper">
 
-        <!--------------- NAVBAR início --------------->
-        <?php include('templates/header.html');?>
-        <!--------------- navbar ends here --------------->
+        <!--------------- NAVBAR/HEADER template --------------->
+        <?php include('templates/header.html'); ?>
+        <!--------------- NAVBAR/HEADER template --------------->
 
         <div class="whitespace"></div>
 
-        <!--------------- hero section starts here say hello 👋 --------------->
+        <!--------------- Seção HERO Contato --------------->
         <div class="container">
             <div class="hero-content">
                 <br><br>
@@ -41,19 +19,17 @@
                 <div class="row">
                     <div class="col-lg-8">
 
-                        <h3 class="wow fadeInUp" data-wow-delay="1s">say hello 👋</h3><br>
-                        <p class="wow fadeInUp" data-wow-delay="1.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusantium sint quod voluptatem dolorum, quaerat, ut iusto cumque magni ab repudiandae, quasi minus unde temporibus nulla eum eaque! Placeat praesentium sunt suscipit
+                        <h3 class="wow fadeInUp" data-wow-delay="0.7s">Diga algo 👋</h3><br>
+                        <p class="wow fadeInUp" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusantium sint quod voluptatem dolorum, quaerat, ut iusto cumque magni ab repudiandae, quasi minus unde temporibus nulla eum eaque! Placeat praesentium sunt suscipit
                             laboriosam deserunt commodi atque corporis, iure maiores dicta, fugit similique.</p>
 
                     </div>
                 </div>
             </div>
         </div>
-        <!--------------- hero section ends here --------------->
+        <!--------------- Seção Hero termina aqui--------------->
 
-        <!-- <div class="whitespace"></div> -->
-
-        <!--------------- form section starts here --------------->
+        <!--------------- Seção preenchimento para contato --------------->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8">
@@ -61,25 +37,24 @@
 
                         <ul>
 
-                            <li class="wow fadeInUp" data-wow-delay="1.4s">
+                            <li class="wow fadeInUp" data-wow-delay="0.8s">
                                 <label for="contact-name">Name :</label>
                                 <div class="textarea">
                                     <input type="text" name="contact-name" id="contact-name" value="" required>
                                 </div>
                             </li>
 
-                            <li class="wow fadeInUp" data-wow-delay="1.6s">
+                            <li class="wow fadeInUp" data-wow-delay="0.9s">
                                 <label for="contact-email">Email :</label>
                                 <div class="textarea">
                                     <input type="email" name="contact-email" id="contact-email" value="" required>
                                 </div>
                             </li>
 
-                            <li class="wow fadeInUp" data-wow-delay="1.6s">
+                            <li class="wow fadeInUp" data-wow-delay="1s">
                                 <label for="contact-project">Message :</label>
                                 <div class="textarea">
-                                    <textarea type="email" name="contact-project" id="contact-project" rows="6" value="" required>
-                                          </textarea>
+                                    <textarea type="email" name="contact-project" id="contact-project" rows="6" value="" required></textarea>
                                 </div>
                             </li>
 
@@ -92,73 +67,24 @@
             </div>
         </div>
 
-        <!--------------- form section ends here --------------->
+        <!--------------- Seção preenchimento para contato FIM --------------->
 
         <div class="whitespace"></div>
 
-        <!--------------- footer starts here --------------->
-        <div class="footer">
-            <div class="container">
-                <br><br>
-
-                <div class="collab">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="hr">
-                    <div class="row"></div>
-                </div>
-
-                <br><br>
-
-                <div class="info">
-                    <div class="row">
-                        <div class="col-lg-4" id="personal">
-                            <p class="wow fadeInUp">connect with me</p>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @harrnish</h4>
-                            <br><br>
-                        </div>
-
-                        <div class="col-lg-4" id="media">
-                            <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                            <ul>
-                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
-                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
-                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
-                                <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
-                            </ul>
-
-                            <br><br>
-                        </div>
-
-                        <div class="col-lg-4" id="address">
-                            <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">harrnish@gmail.com</h4>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--------------- footer ends here --------------->
+        <!--------------- FOOTER template --------------->
+        <?php include('templates/footer.html') ?>
+        <!--------------- FOOTER template --------------->
 
         <br><br><br><br>
 
     </div>
 
-    <!-- greensock cdn -->
+    <!-- REF - greensock cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        // navigation starts here
+        // navigation aqui
         $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -174,9 +100,9 @@
             $("#resize").toggleClass("active");
         });
 
-        // navigation ends here
+        // navigation fim
 
-        // nav animation
+        // nav animation inicio
 
         TweenMax.from("#brand", 1, {
             delay: 0.4,
@@ -191,7 +117,7 @@
             ease: Expo.easeInOut
         }, 0.1);
 
-        // nav animation ends
+        // nav animation fim
 
 
         new WOW().init();

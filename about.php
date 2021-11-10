@@ -1,47 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>About Me | Portfolio Website Template | CODEGRID</title>
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- bootstrap cdns -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="wow.min.js"></script>
-
-</head>
+<title>Sobre mim</title>
+<!--------------- HEAD References TEMPLATES --------------->
+<?php include('templates/head.html'); ?>
+<!--------------- HEAD References TEMPLATES --------------->
 
 <body>
     <div class="wrapper">
 
-        <!--------------- navbar starts here --------------->
-        <?php include('templates/header.html');?>
-        <!--------------- navbar ends here --------------->
+        <!--------------- NAVBAR/HEADER template --------------->
+        <?php include('templates/header.html'); ?>
+        <!--------------- NAVBAR/HEADER template --------------->
 
-
-        <!--------------- hero image starts here --------------->
+<body>
+    <div class="wrapper">
+        <!--------------- Imagem HERO aqui --------------->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 about image wow fadeInUp" data-wow-delay="1s"></div>
             </div>
         </div>
-        <!--------------- hero image ends here --------------->
+        <!--------------- Imagem HERO aqui --------------->
 
 
-        <!--------------- hero section starts here --------------->
+        <!--------------- Texto HERO AQUI --------------->
         <div class="container">
             <div class="hero-content">
                 <br><br>
@@ -60,13 +40,13 @@
                 </div>
             </div>
         </div>
-        <!--------------- hero section ends here --------------->
+        <!--------------- Texto HERO AQUI --------------->
 
         <div class="whitespace"></div>
 
-        <!--------------- footer starts here --------------->
-        <?php include('templates/footer.html')?>
-        <!--------------- footer ends here --------------->
+        <!--------------- FOOTER template --------------->
+        <?php include('templates/footer.html') ?>
+        <!--------------- FOOTER template --------------->
 
         <br><br><br><br>
 
